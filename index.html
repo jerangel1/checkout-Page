@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Playfair+Display&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/4ad39c9065.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="max-w-screen-xl mx-auto px-10 py-10">
+    <h1 class="text-4xl font-bold">Checkout</h1>
+
+    <div class="flex flex-col-reverse lg:flex-row lg:gap-40">
+      <div>
+        <div class="mt-12">
+          <h2 class="text-xl font-bold mb-4">Contact Information</h2>
+          <div class="">
+            <h3 class="font-bold mb-1">Email</h3>
+            <div class="relative">
+              <input class="px-12 py-5 border-2 rounded-xl lg:w-[465px] w-full" placeholder="Enter your email..."
+                type="email" name="" id="" />
+              <i class="fa-solid fa-envelope absolute top-5 left-4 text-2xl text-zinc-400"></i>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h3 class="font-bold mb-1">Phone</h3>
+            <div class="relative">
+              <input class="px-12 py-5 border-2 rounded-xl lg:w-[465px] w-full" placeholder="Enter your phone..."
+                type="text" name="" id="" />
+
+              <i class="fa-solid fa-phone absolute top-4 left-4 text-2xl text-zinc-400"></i>
+            </div>
+          </div>
+        </div>
+        <!--Inicia Addres-->
+        <div class="mt-12">
+          <h2 class="text-xl font-bold mb-4">Shipping address</h2>
+          <div class="">
+            <h3 class="font-bold mb-1">Full name</h3>
+            <div class="relative">
+              <input class="px-12 py-5 border-2 rounded-xl lg:w-[465px] w-full" placeholder="Rodney Cotton" type="email"
+                name="" id="" />
+
+              <i class="fa-regular fa-user absolute top-5 left-4 text-2xl text-zinc-400"></i>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h3 class="font-bold mb-1">Address</h3>
+            <div class="relative">
+              <input class="px-12 py-5 border-2 rounded-xl lg:w-[465px] w-full" placeholder="Your address..."
+                type="email" name="" id="" />
+
+              <i class="fa-solid fa-house absolute top-5 left-4 text-2xl text-zinc-400"></i>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h3 class="font-bold mb-1">City</h3>
+            <div class="relative">
+              <input class="px-12 py-5 border-2 rounded-xl lg:w-[465px] w-full" placeholder="Your city..." type="text"
+                name="" id="" />
+
+              <i class="fa-solid fa-city absolute top-4 left-4 text-2xl text-zinc-400"></i>
+            </div>
+          </div>
+          <div class="flex gap-7">
+            <div class="mt-5">
+              <h3 class="font-bold mb-1">Country</h3>
+              <div class="relative">
+                <input class="px-12 py-5 border-2 rounded-xl w-[162px] md:w-full lg:w-[217px]"
+                  placeholder="your country..." type="text" name="" id="" />
+
+                <i class="fa-solid fa-globe absolute top-4 left-4 text-2xl text-zinc-400"></i>
+              </div>
+            </div>
+            <div class="mt-5">
+              <h3 class="font-bold mb-1">Postal Code</h3>
+              <div class="relative">
+                <input class="px-12 py-5 border-2 rounded-xl w-[185px] md:w-full lg:w-[217px]"
+                  placeholder="your postal code..." type="text" name="" id="" />
+
+                <i class="fa-solid fa-signs-post absolute top-4 left-4 text-2xl text-zinc-400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input class="mt-5" type="checkbox" name="" id="" /> Save this
+        information for next time
+        <!--Finaliza address-->
+
+        <!--Boton cotinue-->
+        <div class="mt-5 text-right">
+          <button class="px-11 py-4 rounded-xl bg-orange-600 text-white font-bold">
+            Continue
+          </button>
+        </div>
+      </div>
+      <!--finaliza boton continue-->
+
+      <div class="bg-slate-300 px-4 py-8 rounded-xl mt-5 lg:mt-20 h-min">
+        <div class="flex gap-7 mb-8">
+          <div>
+            <img class="rounded-xl w-[170px]" src="./photo1.png" alt="" />
+          </div>
+          <div>
+            <h2 class="font-bold text-xl">Vintage Backbag</h2>
+            <div class="flex gap-3">
+              <h3 class="text-orange-400 font-bold">$54.99</h3>
+              <h3 class="line-through font-bold">$94.99</h3>
+            </div>
+            <div class="flex items-center border-gray-100 mt-9">
+              <!-- Botones carrito de compra para Vintage Backbag -->
+              <div class="item-container">
+                <button class="btn-subtract btn-subtract-vintage" onclick="changeQuantity(-1, 'vintage')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <g clip-path="url(#clip0_167_7)">
+                      <path
+                        d="M16.7173 13.8721H6.4355C5.96425 13.8721 5.57868 13.4672 5.57868 12.9724C5.57868 12.4776 5.96425 12.0727 6.4355 12.0727H16.7173C17.1886 12.0727 17.5741 12.4776 17.5741 12.9724C17.5741 13.4672 17.1886 13.8721 16.7173 13.8721Z"
+                        fill="#828282" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_167_7">
+                        <rect width="24.2263" height="24.2263" fill="white" transform="translate(0.264488 0.74353)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="quantity" id="quantity-vintage">1</span>
+                <button class="btn-add btn-add-vintage" onclick="changeQuantity(1, 'vintage')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25" fill="none">
+                    <g clip-path="url(#clip0_167_15)">
+                      <path
+                        d="M16.2143 12.0108H12.2857V15.9394C12.2857 16.3715 11.9321 16.7251 11.5 16.7251C11.0679 16.7251 10.7143 16.3715 10.7143 15.9394V12.0108H6.78571C6.35357 12.0108 6 11.6572 6 11.2251C6 10.7929 6.35357 10.4394 6.78571 10.4394H10.7143V6.51078C10.7143 6.07864 11.0679 5.72507 11.5 5.72507C11.9321 5.72507 12.2857 6.07864 12.2857 6.51078V10.4394H16.2143C16.6464 10.4394 17 10.7929 17 11.2251C17 11.6572 16.6464 12.0108 16.2143 12.0108Z"
+                        fill="#828282" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_167_15">
+                        <rect width="24" height="24" fill="white" transform="translate(0.0942993 0.132538)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <!-- Finaliza botones carrito de compras para Vintage Backbag -->
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-7 mb-8">
+          <div>
+            <img class="rounded-xl w-[170px]" src="./photo2.png" alt="" />
+          </div>
+          <div>
+            <h2 class="font-bold text-xl">Levi Shoes</h2>
+            <div class="flex gap-3">
+              <h3 class="text-orange-400 font-bold">$44.99</h3>
+              <h3 class="line-through font-bold">$24.99</h3>
+            </div>
+            <div class="flex items-center border-gray-100 mt-9">
+              <!-- Botones carrito de compra para Levi Shoes -->
+              <div class="item-container">
+                <button class="btn-subtract btn-subtract-levi" onclick="changeQuantity(-1, 'levi')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <g clip-path="url(#clip0_167_7)">
+                      <path
+                        d="M16.7173 13.8721H6.4355C5.96425 13.8721 5.57868 13.4672 5.57868 12.9724C5.57868 12.4776 5.96425 12.0727 6.4355 12.0727H16.7173C17.1886 12.0727 17.5741 12.4776 17.5741 12.9724C17.5741 13.4672 17.1886 13.8721 16.7173 13.8721Z"
+                        fill="#828282" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_167_7">
+                        <rect width="24.2263" height="24.2263" fill="white" transform="translate(0.264488 0.74353)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="quantity" id="quantity-levi">1</span>
+                <button class="btn-add btn-add-levi" onclick="changeQuantity(1, 'levi')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25" fill="none">
+                    <g clip-path="url(#clip0_167_15)">
+                      <path
+                        d="M16.2143 12.0108H12.2857V15.9394C12.2857 16.3715 11.9321 16.7251 11.5 16.7251C11.0679 16.7251 10.7143 16.3715 10.7143 15.9394V12.0108H6.78571C6.35357 12.0108 6 11.6572 6 11.2251C6 10.7929 6.35357 10.4394 6.78571 10.4394H10.7143V6.51078C10.7143 6.07864 11.0679 5.72507 11.5 5.72507C11.9321 5.72507 12.2857 6.07864 12.2857 6.51078V10.4394H16.2143C16.6464 10.4394 17 10.7929 17 11.2251C17 11.6572 16.6464 12.0108 16.2143 12.0108Z"
+                        fill="#828282" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_167_15">
+                        <rect width="24" height="24" fill="white" transform="translate(0.0942993 0.132538)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <!-- Finaliza botones carrito de compras para Levi Shoes -->
+            </div>
+          </div>
+        </div>
+
+        <!--Finaliza botones carrito de compras-->
+
+        <div class="flex justify-between my-3">
+          <h1 class="font-bold">Shipping</h1>
+          <h3 class="font-bold">$19</h3>
+        </div>
+        <hr />
+        <!-- Agrega un elemento para mostrar el total general -->
+        <div class="flex justify-between my-3">
+          <h1 class="font-bold">Total</h1>
+          <h3 id="total-price" class="font-bold">$118.98</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="text-center mb-5">
+    Coded by <a href="https://github.com/jerangel1">Jesus Rangel</a> -
+    <a href="https://devchallenges.io">devChallenges.io</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

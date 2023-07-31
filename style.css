@@ -1,0 +1,45 @@
+*{font-family: 'Montserrat', sans-serif;;}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-3, #828282);
+  width: 134.254px;
+  height: 52px;
+  flex-shrink: 0;
+}
+
+button {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.btn-add {
+  border-radius: 0 12px 12px 0;
+}
+
+.btn-subtract {
+  border-radius: 12px 0 0 12px;
+}
+
+.quantity {
+  margin: 0 10px;
+  font-size: 24px;
+}
